@@ -1,0 +1,5 @@
+<!--<p>employees works!</p>-->
+Enter your name here:<input type="text" class="form-control"
+[(ngModel)]="name" placeholder="Your Name"><br>
+<button (click)="getCurrentName()" [disabled]="!disableTextBox">Display your name</button>
+<p>{{ currentName }}
